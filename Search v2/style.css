@@ -1,0 +1,112 @@
+body{ 
+    background-color: #2f2f2f;
+    overflow:hidden;
+    margin:0px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+nav > div{
+    width:100%;
+
+    background-color: gray;
+    position: relative;
+    text-align: right;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color:wheat
+}
+.ul1{
+    list-style: none;
+    font-size: 22px;
+    width: 100%;
+}
+.ul1 > a > li{
+    display: inline;
+    margin-right: 30px;
+    justify-content: center;
+    padding:0.4;
+}
+main > form{
+    height:600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    transform:scale(1.1);
+}
+main > form > .textinpt{
+    min-width: 45%;
+    height:50px;
+    outline: none;
+    background-color: transparent;
+    color:wheat;
+    font-size: 20px;
+    padding-left: 5px;
+    border:0px;
+    border-bottom:3px black solid;
+
+}
+
+main > form > button, .btnx2{
+    height: 55px;
+    border: 0px;
+    width: 58px;
+    border-bottom: 3px black solid;
+    background-color:transparent;
+    color: wheat;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btnx2{
+    display: none;
+    position: absolute;
+    right:26%;
+    border-bottom: 0px;
+}
+.btnx2::after{
+display: none;
+}
+main > form > .textinpt::placeholder{
+    color:wheat;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+main > form > .textinpt:after{
+    font-display: none;
+}
+.frame1xs{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom:9%;
+}
+iframe{
+    width: 32%;
+    height:13vw;
+    border:4px solid black;
+    border-radius: 10px;
+}
+footer{
+    position: fixed;
+    bottom:0px;
+    width: 100%;
+    font-size: 20px;
+    background-color: slategray;
+    text-align: center;
+}
+@media only screen and (max-width:700px) {
+    .frame1xs{display: none;}
+    *{font-size: 18px
+    }
+    main > form{
+        transform:scale(0.9);
+    }
+    .btnx2{
+        right:14.5%;
+    }
+}
