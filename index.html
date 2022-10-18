@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X</title>
+    <link rel="Stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#1pq"><img src="/sq/icons8-home-64.png"> About</a></li>
+            <li><a href="#2pq"><img src="/sq/icons8-person-64.png">More</a></li>
+            <li><a href="#3pq"><img src="/sq/icons8-letter-67.png">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="main1">
+        <div class="phto">i dont wanna show myself</div>
+        <div class="fqrk"> Faruk Yavuz</div>
+        <div class="fqrks">
+            <a href="https://instagram.com/fqruks">Ig: Fqruks</a>
+            <a href="mailto:qaex00@gmail.com">Mail: qaex00@gmail.com</a>
+            <a href="https://wa.me/000">WhatsApp: +000</a>
+        </div>
+    </div>
+    <main>
+        <section id="1pq">
+            <h1>About Me</h1>
+            <div>
+                <h2>Im Farug, nowadays im studying at high scholl,<br>
+                     if u wanna learn more about me surely i can describe myself;<br><br>
+                      firstly ive reliable and creative personality and im very kind to other peoples :)<br>
+                    but sometimes im getting being rude thats depends to people whichs talking with me.<br>
+                    generally i dont care the things that suppesed to be make me feel upset<br> if ure wondering more about me why dont u ask directly?
+                     </h2>
+            </div></section>
+        <section id="2pq">
+            <div>
+                <h1>Experience's</h1>
+                <div class="dvx0">
+                    <h3>Ordinary Life</h3>
+                    <div>
+                   <h2>Enough english to talk common things</h2><br>
+                   <h2>i can ignore peoples easyly :D</h2><br>
+                   <h2>im able to took my breath about 30 second</h2><br>
+                   <h2>i can learn everything if i related with that.</h2><br>
+                    </div>
+                </div>
+                <div class="dvx0">
+                    <h3>Computer</h3>
+                    <div>
+                        <h2>i got +8 years computer experience (windows)</h2><br>
+                        <h2>im trying to imrpove myself on HTML CSS and JS</h2><br>
+                        <h2>i can find a solition almost every issue (exclude computer parts.)</h2><br>
+                        <h2>and few experience about it. i cant assume myself as a computer intelligient</h2><br>
+                         </div>
+                </div>
+                </div>
+        </section>
+        <section id="3pq">
+            <h1>Contact</h1>
+            <form onsubmit="return false" id="formx" class="inpts">
+              <label>Name<input id="nm" type="text" maxlength="25" autocomplete="off"></label>
+              <label>Mail<input id="mail" autocomplete="off" type="text"></label>
+              <label>Phone<input id="tel" autocomplete="off" type="tel"></label>
+              <label>Your Message<textarea autocomplete="off" id="msg" class="inptmsg" type="text" maxlength="130"></textarea>
+              <input id="submit" type="submit">
+              <input class="rstinpt" type="reset">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="https://instagram.com/fqruks">Ig: Fqruks</a>
+        <a href="mailto:qaex00@gmail.com">Mail: qaex00@gmail.com</a>
+        <a href="https://wa.me/000">WhatsApp: +000</a>
+    </footer>
+    <script>
+        let nm;
+        let mail;
+        let tel;
+        let msg;
+        document.getElementById("submit").onclick = function(){
+            nm= document.getElementById("nm").value;
+            mail = document.getElementById("mail").value;
+            tel = document.getElementById("tel").value;
+            msg = document.getElementById("msg").value;
+            if(nm !=""){
+                if(mail !=""){
+                    if(tel !=""){
+                        if(msg !=""){
+                            alert("ur attempt successfully failed. ")
+                            document.getElementById("formx").reset();
+                    }
+                        else{alert("u must fill the inputs!")}
+                    }      
+                    else{alert("u must fill the inputs!")}
+                }
+                else{alert("u must fill the inputs!")}
+            }
+            else{alert("u must fill the inputs!")}
+
+        }
+    </script>
+</body>
+</html>
