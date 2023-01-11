@@ -34,8 +34,19 @@ h2{
 .icon:active{
     opacity: 0.8;
 }
+
+
+@media (max-width:1201px) {
+    body{
+        background-size:180vh
+    }
+    
+}
 @media (max-width: 769px) {
     .d1{margin-top:20vh;}
+    .icon{ width:calc(1.5rem + 5vw );
+    margin-left:1.5vw;
+margin-right: 1.5vw;}
     }
 @media (max-width: 541px) {
     .d1{margin-top:15vh;}
