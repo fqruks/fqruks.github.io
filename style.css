@@ -26,6 +26,9 @@ h2{
     position: fixed;
     bottom: -1vh;
 }
+.footer > h3{
+    margin-bottom:calc(3vh + 0.5rem)
+}
 .icon:hover{
     animation:scale 130s;
     box-shadow: 0.1rem 0.8rem 1.5rem rgba(0, 0, 0, 1);
