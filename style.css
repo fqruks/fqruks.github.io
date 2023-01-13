@@ -15,7 +15,7 @@ body{
     margin-left: -2vw;
 }
 h2{
-    transform: translateY(-4vh);
+    transform: translateY(-6vh);
 }
 .d2 > a{
     margin-right:1vw;
@@ -24,7 +24,7 @@ h2{
 .footer{ 
     width: 100vw;
     position: fixed;
-    bottom: 0;
+    bottom: -1vh;
 }
 .icon:hover{
     animation:scale 130s;
